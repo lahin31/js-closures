@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="console.log('Rob: ' + incRob());">Rob</button>
+    <button onclick="console.log('Mark: ' + incMark());">Mark</button>
+    <script>
+        var incRob = (function () {
+            var rob = 1;
+            return function () {
+                return rob++;
+            } 
+        })();
+        var incMark = (function() {
+            var mark = 1;
+            return function() {
+                return mark++;
+            }
+        })();
+    </script>
+</body>
+</html>
