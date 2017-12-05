@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title></title>
 </head>
 <body>
     <button onclick="console.log('Rob: ' + incRob());">Rob</button>
     <button onclick="console.log('Mark: ' + incMark());">Mark</button>
     <script>
         var incRob = (function () {
-            var rob = 1;
+            var rob = 1; // As the outer function runs only once so first it will throw 0 if we assign 0 
             return function () {
                 return rob++;
             } 
         })();
         var incMark = (function() {
-            var mark = 1;
+            var mark = 1; // As the outer function runs only once so first it will throw 0 if we assign 0 
             return function() {
                 return mark++;
             }
