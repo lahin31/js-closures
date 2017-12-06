@@ -10,9 +10,9 @@
     <button onclick="console.log('Rob: ' + incRob());">Rob</button>
     <button onclick="console.log('Mark: ' + incMark());">Mark</button>
     <script>
-        var incRob = (function () {
+        var incRob = (function() {
             var rob = 1; // As the outer function runs only once so first it will throw 0 if we assign 0 
-            return function () {
+            return function() {
                 return rob++;
             } 
         })();
